@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EegorEditor", "EegorEditor\EegorEditor.csproj", "{88152A6D-D82E-4B58-8292-F16BDC9342BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EegorEditor", "EegorEditor\EegorEditor.csproj", "{88152A6D-D82E-4B58-8292-F16BDC9342BE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{91FE118B-BD6D-4773-A884-F7790A358AC6}"
 EndProject

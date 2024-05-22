@@ -5,5 +5,5 @@
         <a:string>Gamecode</a:string>
     </Folders>
     <ProjectFile>project.eegor</ProjectFile>
-    <ProjectType>Empty Project</ProjectType>
+    <ProjectType>Top-Down Project</ProjectType>
 </ProjectTemplate>

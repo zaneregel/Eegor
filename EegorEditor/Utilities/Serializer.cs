@@ -23,7 +23,26 @@ namespace EegorEditor.Utilities
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                // TODO: proper debug loggin
+                Logger.Log(MessageType.Error, $"Failed to serialize {instance} to {path}");
+                throw;
+            }
+        }
+
+        public static T FromFile<T>(string path)
+        {
+            try
+            {
+                using var fs = new FileStream(path, FileMode.Open);
+                var serializer = new DataContractSerializer(typeof(T));
+                T instance = (T)serializer.ReadObject(fs);
+                return instance;
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                Logger.Log(MessageType.Error, $"Failed to deserialize {path}");
+                throw;
             }
         }
     }
