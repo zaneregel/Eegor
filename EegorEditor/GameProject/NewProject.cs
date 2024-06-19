@@ -32,7 +32,7 @@ namespace EegorEditor.GameProject
     internal class NewProject : ViewModelBase
     {
         // TODO: get path from installation location
-        private readonly string _templatePath = @"..\..\..\EegorEditor\ProjectTemplates";
+        private readonly string _templatePath = @"..\..\EegorEditor\ProjectTemplates";
         private string _projectname = "NewProject";
         public string ProjectName
         {

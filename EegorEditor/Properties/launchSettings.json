@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EegorEditor": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

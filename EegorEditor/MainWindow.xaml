@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:EegorEditor"
         xmlns:editors="clr-namespace:EegorEditor.Editors"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="Eegor Editor" Height="1080" Width="1920">
+        Title="Eegor Editor" Height="1080" Width="1920"
+        Style="{StaticResource EegorWindowStyle}">
     <Grid>
         <editors:WorldEditorView/>
     </Grid>

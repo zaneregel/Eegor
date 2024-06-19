@@ -36,5 +36,24 @@ namespace EegorEditor.Dictionaries
                 Keyboard.ClearFocus();
             }
         }
+
+        private void OnClose_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = (Window)((FrameworkElement)sender).TemplatedParent;
+            window.Close();
+        }
+
+        private void OnMaximizeRestore_Botton_Click(object sender, RoutedEventArgs e)
+        {
+            var window = (Window)((FrameworkElement)sender).TemplatedParent;
+            window.WindowState = (window.WindowState == WindowState.Normal) ? 
+                WindowState.Maximized : WindowState.Normal;
+        }
+
+        private void OnMinimize_Botton_Click(object sender, RoutedEventArgs e)
+        {
+            var window = (Window)((FrameworkElement)sender).TemplatedParent;
+            window.WindowState = WindowState.Minimized;
+        }
     }
 }
